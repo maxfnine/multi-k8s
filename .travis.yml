@@ -18,12 +18,13 @@ after_success:
   - docker push maxfnine/multi-server
   - docker push maxfnine/multi-worker
 deploy:
+  edge: true
   provider: elasticbeanstalk
-  region: "us-east-2"
-  app: "multi-docker"
-  env: "MultiDocker-env"
-  bucket_name: "elasticbeanstalk-us-east-2-073358271936"
-  bucket_path: "docker-multi"
+  region: us-east-2
+  app: multi-docker
+  env: MultiDocker-env
+  bucket_name: elasticbeanstalk-us-east-2-073358271936
+  bucket_path: docker-multi
   on:
     branch: master
   access_key_id: $AWS_ACCESS_KEY
