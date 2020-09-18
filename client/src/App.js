@@ -11,9 +11,7 @@ function App() {
       <div className="App">
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
+          <h2>Fibonacci Calculator</h2>
           <Link to="/">Home</Link>
           <Link to="/otherpage">Other Page</Link>
         </header>
